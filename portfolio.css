@@ -1,0 +1,19 @@
+header.my_header {
+  height: 100px;
+  width: 100%;
+}
+
+header.my_header > h1 {
+  font-style: oblique;
+  font-size: 40px;
+  font-family:'Major Mono Display', monospace;
+  font-weight: bold;
+  color: #ff6666;
+}
+
+header.my_header > h2 {
+  font-style: oblique;
+  font-size: 20px;
+  font-family: Arial sans-serif;
+  font-weight: normal;
+}
