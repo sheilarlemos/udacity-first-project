@@ -9,6 +9,7 @@ header.my_header > h1 {
   font-family:'Major Mono Display', monospace;
   font-weight: bold;
   color: #ff6666;
+
 }
 
 header.my_header > h2 {
