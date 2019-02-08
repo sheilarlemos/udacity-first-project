@@ -1,20 +1,139 @@
+body {
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Martel', serif;
+}
+
+main {
+  margin: 5px;
+}
+
 header.my_header {
-  height: 100px;
   width: 100%;
 }
 
-header.my_header > h1 {
-  font-style: oblique;
-  font-size: 40px;
-  font-family:'Major Mono Display', monospace;
-  font-weight: bold;
-  color: #ff6666;
-
+.logo {
+  background: url(img/logo.png);
+  width: 66px;
+  height: 56px;
+  background-size: 66px 56px;
 }
 
-header.my_header > h2 {
+.title-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title h1 {
+  font-style: oblique;
+  font-size: 32px;
+  font-family:'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #ff6666;
+  margin: 0;
+  padding: 0;
+}
+
+.title h2 {
   font-style: oblique;
   font-size: 20px;
-  font-family: Arial sans-serif;
+  color: #ff6666;
+  font-family:'Barlow Condensed', sans-serif;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
+ text-align: right;
+}
+
+nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #ff9999;
+}
+
+nav > ul a {
+text-decoration: none;
+color: #ffffff;
+padding: 6px;
+display: block;
+text-align: center;
+}
+
+nav > ul li {
+  width: 50%;
+  font-family: 'Martel', serif;
+}
+
+.picture > div > img {
+  width: 100%;
+}
+
+.picture p {
+  text-align: justify;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Martel', serif;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 114px;
+    height: 96px;
+    background-size: 114px 96px;
+    margin: 20px;
+  }
+
+  .title h1 {
+    font-size: 55px;
+  }
+
+  .title h2 {
+    font-size: 35px;
+  }
+  nav > ul li {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .picture {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .picture > div {
+    width: 30%;
+    margin-right: 8px;
+  }
+  .picture > p {
+    flex: 1;
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1295px) {
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  header.my_header {
+    width: 960px;
+    margin: 0 auto;
+    align-items: center;
+  }
 }
